@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>فندق المدينة الشبابية</title>
+<title>فندق الأصالة الفاخر</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Noto+Serif+Arabic:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --gold: #ffffff;
-    --gold-light: #fff176;
-    --gold-shine: #fff176;
+    --gold: #b8922a;
+    --gold-light: #d4a843;
+    --gold-shine: #f0c96a;
     --dark: #0c0a06;
     --dark2: #141008;
     --dark3: #1c1a0f;
@@ -40,7 +40,7 @@
   .hero { height: 100vh; min-height: 700px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
   .hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #0c0a06 0%, #1e1608 40%, #0e0c05 100%); }
   .hero-bg::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(45deg, transparent, transparent 60px, rgba(184,146,42,0.03) 60px, rgba(184,146,42,0.03) 61px), repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(184,146,42,0.03) 60px, rgba(184,146,42,0.03) 61px); }
-  .hero-img { position: absolute; inset: 0; background: url('https://image2url.com/r2/default/images/1772455689040-fe39a77a-5318-43b6-af67-863b6224c77a.jpeg') center/cover no-repeat; opacity: 0.35; filter: saturate(0.6); }
+  .hero-img { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1800&q=80') center/cover no-repeat; opacity: 0.35; filter: saturate(0.6); }
   .hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,10,6,0.5) 0%, rgba(12,10,6,0.2) 50%, rgba(12,10,6,0.85) 100%); }
   .hero-content { position: relative; text-align: center; max-width: 800px; padding: 0 30px; animation: fadeUp 1.2s ease forwards; }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
@@ -54,14 +54,6 @@
   .hero-scroll { position: absolute; bottom: 35px; left: 50%; transform: translateX(-50%); color: rgba(246,237,216,0.5); font-size: 0.75rem; letter-spacing: 2px; animation: bounce 2s infinite; display: flex; flex-direction: column; align-items: center; gap: 6px; }
   .hero-scroll::after { content: '↓'; font-size: 1.2rem; color: var(--gold); }
   @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
-
-  /* FEATURES */
-  .features { background: var(--dark2); padding: 50px; display: grid; grid-template-columns: repeat(4,1fr); border-top: 1px solid rgba(184,146,42,0.2); border-bottom: 1px solid rgba(184,146,42,0.2); }
-  .feature-item { padding: 30px 20px; text-align: center; border-right: 1px solid rgba(184,146,42,0.15); }
-  .feature-item:last-child { border-right: none; }
-  .feature-icon { font-size: 2rem; margin-bottom: 12px; }
-  .feature-item h3 { font-size: 1rem; color: var(--gold-light); margin-bottom: 6px; }
-  .feature-item p { font-size: 0.85rem; color: rgba(246,237,216,0.55); line-height: 1.6; }
 
   /* SECTION */
   section { padding: 90px 50px; }
@@ -82,7 +74,6 @@
   .room-info { padding: 24px; }
   .room-type { font-size: 0.72rem; color: var(--gold-light); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 8px; }
   .room-name { font-family: 'Noto Serif Arabic', serif; font-size: 1.25rem; color: var(--cream); margin-bottom: 12px; }
-  .room-features { display: flex; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
   .room-feat { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; color: rgba(246,237,216,0.65); }
   .room-feat span:first-child { font-size: 1rem; }
   .room-divider { height: 1px; background: linear-gradient(90deg, rgba(184,146,42,0.3), transparent); margin-bottom: 18px; }
@@ -180,7 +171,6 @@
     nav { padding: 14px 24px; }
     .nav-links { display: none; }
     section { padding: 70px 24px; }
-    .features { grid-template-columns: repeat(2,1fr); padding: 30px 24px; }
     .rooms-grid { grid-template-columns: 1fr; }
     .pricing-grid { grid-template-columns: 1fr; }
     .gallery-grid { grid-template-columns: repeat(2,1fr); grid-template-rows: auto; }
@@ -390,10 +380,6 @@
   <div class="section-line"></div>
   <div class="gallery-grid">
     <div class="gallery-item"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=900&q=80" alt="فندق"></div>
-    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" alt="مسبح"></div>
-    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="مطعم"></div>
-    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80" alt="سبا"></div>
-    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="إفطار"></div>
   </div>
 </section>
 
@@ -410,20 +396,24 @@
       </div>
       <div class="contact-item">
         <div class="contact-icon">📱</div>
-        <div><div class="contact-item-label">الهاتف الأرضي</div><div class="contact-item-val">0572528065</div></div>
+        <div><div class="contact-item-label">رقم الأرضي</div><div class="contact-item-val">0572528065</div></div>
       </div>
       <div class="contact-item">
-        <div class="contact-icon">📞</div>
-        <div><div class="contact-item-label">الهاتف الرئيسي</div><div class="contact-item-val">+201024111128</div></div>
+        <div class="contact-icon">📱</div>
+        <div><div class="contact-item-label">رقم الحجز</div><div class="contact-item-val">+201098950105</div></div>
       </div>
       <div class="contact-item">
         <div class="contact-icon">📍</div>
-        <div><div class="contact-item-label">العنوان</div><div class="contact-item-val">شارع الملك فهد، الرياض</div></div>
+        <div><div class="contact-item-label">العنوان</div><div class="contact-item-val">دمياط - رأس البر شارع 57 - امام صالة المغطاة</div></div>
       </div>
       <div class="social-btns">
         <a href="https://wa.me/201098950105" target="_blank" class="social-btn btn-whatsapp">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           واتساب
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100066600094582&name=xhp_nt__fb__action__open_user" target="_blank" class="social-btn btn-facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          فيسبوك
         </a>
       </div>
     </div>
@@ -431,7 +421,7 @@
     <div class="booking-form">
       <h3>استفسار وحجز سريع</h3>
       <div class="form-group"><label>الاسم الكامل</label><input type="text" placeholder="أدخل اسمك الكامل" id="inp-name"></div>
-      <div class="form-group"><label>رقم الهاتف</label><input type="tel" placeholder="+20XXXXXXXXX" id="inp-phone"></div>
+      <div class="form-group"><label>رقم الهاتف</label><input type="tel" placeholder="+20 1X XXX XXXX" id="inp-phone"></div>
       <div class="form-row">
         <div class="form-group"><label>تاريخ الوصول</label><input type="date" id="inp-arrival"></div>
         <div class="form-group"><label>تاريخ المغادرة</label><input type="date" id="inp-depart"></div>
@@ -455,11 +445,11 @@
 <footer>
   <div class="footer-logo">فندق المدينة الشبابية</div>
   <div class="footer-line"></div>
-  <p>
-   دمياط - رأس البر شارع 57 - امام صالة المغطاة<br>
-    📞 201024111128 &nbsp;|&nbsp; 📱 +201098950105<br>
+  <p>دمياط - رأس البر شارع 57 - امام صالة المغطاة<br>
+    📞 +201098950105 &nbsp;|&nbsp; 📱 +201098950105<br>
+    info@alasala-hotel.com
   </p>
-  <p style="margin-top:24px; color: rgba(246,237,216,0.2); font-size:0.78rem;">© 2025 فندق المدينة الشبابية — جميع الحقوق محفوظة</p>
+  <p style="margin-top:24px; color: rgba(246,237,216,0.2); font-size:0.78rem;">© 2025 فندق الأصالة الفاخر — جميع الحقوق محفوظة</p>
 </footer>
 
 <!-- MODAL -->
@@ -473,7 +463,11 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         واتساب: +201098950105
       </a>
-      <a href="tel:+201098950105" class="modal-action-btn modal-phone">📞 اتصل: +201098950105</a>
+      <a href="tel:+966123456789" class="modal-action-btn modal-phone">📞 اتصل: +201098950105</a>
+      <a href="https://www.facebook.com/profile.php?id=100066600094582&name=xhp_nt__fb__action__open_user" target="_blank" class="modal-action-btn modal-fb">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        راسلنا على فيسبوك
+      </a>
     </div>
   </div>
 </div>
@@ -496,8 +490,8 @@
     const arrival = document.getElementById('inp-arrival').value;
     const depart = document.getElementById('inp-depart').value;
     if (!name || !phone) { alert('يرجى إدخال الاسم ورقم الهاتف'); return; }
-    const msg = encodeURIComponent(مرحباً، أريد الاستفسار عن حجز غرفة.\n\nالاسم: ${name}\nالهاتف: ${phone}${room ? '\nنوع الغرفة: ' + room : ''}${arrival ? '\nتاريخ الوصول: ' + arrival : ''}${depart ? '\nتاريخ المغادرة: ' + depart : ''});
-    window.open('https://wa.me/201098950105/?text=' + msg, '_blank');
+    const msg = encodeURIComponent(`مرحباً، أريد الاستفسار عن حجز غرفة.\n\nالاسم: ${name}\nالهاتف: ${phone}${room ? '\nنوع الغرفة: ' + room : ''}${arrival ? '\nتاريخ الوصول: ' + arrival : ''}${depart ? '\nتاريخ المغادرة: ' + depart : ''}`);
+    window.open('https://wa.me/201098950105?text=' + msg, '_blank');
   }
   window.addEventListener('scroll', () => {
     const nav = document.getElementById('navbar');
